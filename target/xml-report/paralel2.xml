@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="562.393" tests="7" skipped="0" failures="2" errors="0">
+<testcase classname="US1005 kullanici amazonda  urun aratip 2.urun detaylarini test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="164.578">
+<failure/>
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+When amazonda "Nutella" icin arama yapar....................................passed
+And 5 saniye bekler.........................................................passed
+And 2.urune gider...........................................................passed
+Then urun isiminin  "Nutella" icerdigini test eder..........................undefined
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.1" time="83.241">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Nutella" icin arama yapar....................................passed
+And sonuclarin "Nutella" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.2" time="58.588">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Java" icin arama yapar.......................................passed
+And sonuclarin "Java" icerdigini test eder..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.3" time="77.425">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.4" time="30.819">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Apple" icin arama yapar......................................passed
+And sonuclarin "Apple" icerdigini test eder.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.5" time="85.696">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Furkan" icin arama yapar.....................................passed
+And sonuclarin "Furkan" icerdigini test eder................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 gecerli kullanici adi ve sifre ile sisteme giris" name="TC12 Gecerli username ve password ile basarili giris yapilabilmeli" time="59.701">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn red radius-5 mt-4 w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (916, 541). Other element would receive the click: &lt;div class=&quot;cookieButton&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d35e9e5321045ab04d0d894c58b8564, clickElement {id=b9a113a7-271f-420f-83b3-73a9ed53a760}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54661/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0d35e9e5321045ab04d0d894c58b8564)] -&gt; xpath: //button[text()='Login']]
+Session ID: 0d35e9e5321045ab04d0d894c58b8564">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn red radius-5 mt-4 w-100">...</button> is not clickable at point (916, 541). Other element would receive the click: <div class="cookieButton">...</div>
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d35e9e5321045ab04d0d894c58b8564, clickElement {id=b9a113a7-271f-420f-83b3-73a9ed53a760}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54661/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0d35e9e5321045ab04d0d894c58b8564)] -> xpath: //button[text()='Login']]
+Session ID: 0d35e9e5321045ab04d0d894c58b8564
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at stepdefinitions.QdStepdefinitions.login_butonuna_basar(QdStepdefinitions.java:25)
+	at ✽.login butonuna basar(file:///C:/Users/HP/Desktop/Yeni%20klasör/com.team108_Cocumber/src/test/resources/features/US1008_PozitifLoginTesti.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak "qdGecerliUsername" girer...............................passed
+And password olarak "qdGecerliPassword" girer...............................passed
+And 10 saniye bekler........................................................passed
+And login butonuna basar....................................................failed
+Then basarili olarak giris yapildigini test eder............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
